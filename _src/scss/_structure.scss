@@ -1,7 +1,10 @@
 header {
-    padding-top:15px;
+    position: relative;
+    z-index: 3;
+    padding-top:30px;
+    height:150px;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.258140756302521) 54%, rgba(0,0,0,0.5242471988795518) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.9) 100%);
 
         .header-actions {
             text-align: right;
@@ -9,11 +12,79 @@ header {
                     color:white;
                 }
         }
+
+        nav {
+            .navbar-nav {
+                .nav-item {
+                    margin-right:30px;
+                    a {
+                        color:white;
+                            
+                            &:hover {
+                                color:$main-blue;
+                            }
+                    }
+                }
+            }
+        }
+
+        .account-cta {
+            background-color:$white;
+            padding:15px 35px;
+            display:inline-block;
+            border-radius:30px;
+            float:right;
+            font-size:.8rem;
+                a {
+                    color:$charcoal;
+                }
+        }
 }
 
 .hero {
+    margin-top:-150px;
     width:100%;
     height:100%;
-    max-height:500px;
+    max-height:830px;
     position: relative;
+
+        &:before {
+            background:rgba(0,0,0,0.8);
+            background-size:cover;
+            position: absolute;
+            z-index: 1;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            content:'';
+        }
+
+        .slide-item {
+            position: absolute;
+            z-index: 2;
+            top:150px;
+            padding:70px 0px 0px 0px;
+            width: 100%;
+            text-align: center;
+            font-weight:700;
+            font-size:5.525rem;
+            line-height:5rem;
+
+                .slide-title {
+                    color:$white;
+                    margin-bottom:15px;
+                }
+                
+                .slide-blurb {
+                    color:$white;
+                    font-size:2rem;
+                    line-height: 2.2rem;
+                    font-weight:400;
+                    margin-bottom:30px;
+                }
+        }
+
+
+        
 }
