@@ -1,36 +1,34 @@
+// Header
 header {
     position: relative;
     z-index: 3;
     padding-top:30px;
-    height:150px;
+    height:120px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.9) 100%);
 
-        .header-actions {
-            text-align: right;
-                a {
-                    color:white;
-                }
-        }
-
-        nav {
-            .navbar-nav {
-                .nav-item {
-                    margin-right:30px;
-                    a {
-                        color:white;
-                            
-                            &:hover {
-                                color:$main-blue;
-                            }
-                    }
-                }
+        .main-logo {
+            img {
+                width:100%;
+                max-width:326px;
             }
         }
 
+        .header-actions {
+            text-align: right;
+            margin-top:10px;
+            display: inline-block;
+                a {
+                    color:$white;
+                    margin-left:15px;
+                    display: inline-block;
+                }
+        }
+
         .account-cta {
+            display: inline-block;
             background-color:$white;
-            padding:15px 35px;
+            padding:15px 30px;
             display:inline-block;
             border-radius:30px;
             float:right;
@@ -39,14 +37,74 @@ header {
                     color:$charcoal;
                 }
         }
+
+        .navbar-toggler {
+            margin-top:0px;
+            font-size:2rem;
+            color:#fff;
+            float:right;
+        }
 }
 
+// Main Navigation
+.navbar {
+    padding:0;
+    margin-top:20px;
+    @extend .poppins;
+
+    .navbar-nav {
+        .nav-item {
+            margin-right:30px;
+            .nav-link {
+                display: inline-block;
+                color:$white;
+                    &:hover {
+                        color:$main-blue;
+                    }
+            }
+        }
+    }
+
+    
+
+    .close-nav {
+        font-size:1.2rem;
+        position: absolute;
+        top:0px;
+        right:0px;
+        z-index: 1010;
+    }
+
+    .dropdown-menu {
+        background: $black;
+            
+            a {
+                color:$white;
+                &:hover {
+                    background-color:$main-blue;
+                }
+            }
+    }
+
+}
+
+
+
+// Hero Banner
 .hero {
     margin-top:-150px;
     width:100%;
     height:100%;
     max-height:830px;
     position: relative;
+    @extend .poppins;
+
+        .hero-player {
+            background: #000; 
+            height: 700px; 
+            width: 100%; 
+            position: relative; 
+        }
 
         &:before {
             background:rgba(0,0,0,0.8);
@@ -64,16 +122,16 @@ header {
             position: absolute;
             z-index: 2;
             top:150px;
-            padding:70px 0px 0px 0px;
+            padding:70px 15px 0px 15px;
             width: 100%;
             text-align: center;
             font-weight:700;
-            font-size:5.525rem;
             line-height:5rem;
 
                 .slide-title {
                     color:$white;
                     margin-bottom:15px;
+                    font-size:5.525rem;
                 }
                 
                 .slide-blurb {
@@ -85,6 +143,72 @@ header {
                 }
         }
 
+}
 
-        
+// Serivde Intro
+
+
+.service-intro {
+    background: $light-gray;
+    border-top:20px solid $dark-gray;
+    .container {
+        position:relative;
+        background-color:$white;
+        margin:0px;
+        margin-top:-50px;
+        z-index:3;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+        @include horizontal-align();
+
+
+            .service-item {
+                padding:30px 15px;
+            }
+
+            .service-icon {
+                float:left;
+                width:100%;
+                max-width: 60px;
+                @include vertical-align();
+            }
+    }
+}
+// About Splash
+.about {
+    padding-top:100px;
+    min-height: 800px;
+    background-image:url('../images/city-bg-lg.png');
+    background-repeat:no-repeat;
+    background-color: $light-gray;
+    background-position: bottom center;
+    background-size: cover;
+
+        .about-title-container {
+            margin-bottom:-140px;
+
+                .about-dashed {
+                    margin-top:-100px;
+                    width:1px;
+                    border:1px dashed $dark-gray;
+                    height:200px;
+                    display: block;
+                    @include horizontal-align();
+                }    
+
+                .about-title {
+                    border:10px solid $dark-gray;
+                    font-size:2.5rem;
+                    background:$white;
+                    padding:10px 20px;
+                    display: inline-block;
+                    @extend .poppins;
+                    transform: rotate(-90deg);
+                    margin-bottom:-140px;
+                }
+        }
+        .splash-text {
+            font-size:2.60rem;
+            line-height:3rem;
+            @extend .poppins;
+        }
 }

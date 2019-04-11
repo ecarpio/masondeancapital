@@ -1,122 +1,219 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="styles/vendors.min.css" />
-        <link rel="stylesheet" href="styles/fontawesomepro.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-        <link rel="stylesheet" href="styles/styles.css" />
-
-        <script src="scripts/vendors.min.js"></script>
-        <script src="scripts/main.min.js"></script>
-        </head>
-    <body>
-        
-
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 main-logo">
-                        <img src="images/Logo.png" />
-                    </div>
-                    <div class="col-8 header-actions">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div classs="col-12">
-                        <nav class="navbar navbar-expand-lg">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                              <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Why MDC?</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Trading Platforms</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Education</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Support</a>
-                              </li>
-                             <!--  <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Dropdown link
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                              </li> -->
-                            </ul>
-
-                            <span class="account-cta">
-                                <a href="#">New Account</a>
-                                &nbsp;&nbsp;|&nbsp;&nbsp;
-                                <a href="#">Login</a>
-                            </span>
-
-                          </div>
-                        </nav>
-                    </div>
-                </div>
-                
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/vendors.min.css" />
+    <link rel="stylesheet" href="styles/fontawesomepro.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/vendors.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="row">
+            <div class="col-10 col-sm-7 main-logo">
+                <img src="images/Logo.png" />
             </div>
-        </header>
+            <div class="col-2 col-sm-5">
+              <!-- <div class="header-actions">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div> -->
+              <div class="account-cta d-none d-md-inline-block">
+                <a href="#">New Account</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#">Login</a>
+              </div>
 
-        <!-- <div class="hero">
-            <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/HyYpY69Zk6Y',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</div>
-        </div>
+              <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fal fa-bars"></i>
+              </button>
 
-        <div class="test">
-            asdadsadsd
-        </div> -->
-
-        <div id="hero" class="hero">
-                <div id="heroPlayer" style="background: #000; height: 700px; width: 100%; position: relative; " ></div>
-                <div id="customElement" class="player" data-property="{videoURL:'HyYpY69Zk6Y',containment:'#heroPlayer', showControls:true, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:true, quality:'default'}">
-                </div>
-                
-                <div class="row slide-item justify-content-center">
-                    <div class="col-12">
-                        <div class="slide-title">
-                            PLAN YOUR TRADE<br />
-                            TRADE YOUR PLAN
-                        </div>
-                        <div class="slide-blurb">
-                            Discover why Mason Dean Capital is your<br />
-                            best choice for FOREX and Futures Trading.
-                        </div>
-
-                        <div class="cta">
-                            <button class="btn btn-primary">Read More</button>
-                            <button class="btn btn-white">See Our Services</button>
-                        </div>
-
-                    </div>
-                </div>
+            </div>
             
         </div>
 
+        <!-- Start Main Navigation -->
+        <nav class="navbar navbar-expand-lg d-inline-flex">
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-    </body>
+            <button class="close-nav d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fal fa-times"></i>
+            </button>
+
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why MDC?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trading Platforms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Education</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Support</a>
+                <a href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- End Main Navigation -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Hero -->
+    <div id="hero" class="hero">
+      <div id="heroPlayer" class="hero-player"></div>
+      <div id="customElement" class="player" data-property="{videoURL:'HyYpY69Zk6Y',containment:'#heroPlayer', showControls:true, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:true, quality:'default'}"></div>
+
+          <div class="slide-item justify-content-center">
+            <div class="slide-title">
+                PLAN YOUR TRADE<br />
+                TRADE YOUR PLAN
+            </div>
+            <div class="slide-blurb">
+                Discover why Mason Dean Capital is your<br />
+                best choice for FOREX and Futures Trading.        
+            </div>
+            <div class="cta">
+                <button class="btn btn-primary">Read More</button>
+                <button class="btn btn-white">See Our Services</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Start Service Intro -->
+    <div class="service-intro">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4">
+            <div class="service-item d-flex-inline">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/globe-icon.png" class="service-icon" />
+                </div>
+                <div class="col-lg-9">
+                  <h4>Forex Trading</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, cons
+                    bh dolor, malesuada  etili adipDon 
+                    nec malesuada  etgutet…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-12 col-md-4">
+            <div class="service-item d-flex-inline">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/globe-icon.png" class="service-icon" />
+                </div>
+                <div class="col-lg-9">
+                  <h4>Forex Trading</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, cons
+                    bh dolor, malesuada  etili adipDon 
+                    nec malesuada  etgutet…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="service-item d-flex-inline">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/globe-icon.png" class="service-icon" />
+                </div>
+                <div class="col-lg-9">
+                  <h4>Forex Trading</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, cons
+                    bh dolor, malesuada  etili adipDon 
+                    nec malesuada  etgutet…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Service Intro -->
+
+    <!-- Start About Splash -->
+
+    <div class="about">
+      <div class="container">
+
+        <div class="row about-title-container justify-content-center">
+          <div class="col-12 text-center">
+
+            <div class="about-dashed"></div>
+
+            <div class="about-title">
+              ABOUT US
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="splash-text">
+              to provide <strong>premier education</strong>,
+              <strong>superior trading</strong> tools and a 
+              <strong>multitude of services</strong> to traders of all levels
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-5">
+            <p>
+              Mason Dean Capital are the foremost providers of online FOREX and Futures
+              trading and related services.
+            </p>
+            <p>
+              Our mission is to provide premier education, superior trading tools and a
+              multitude of services to traders of all levels while operating within the most 
+              widely respected jurisdictions in the world. We take pride is taking personal 
+              care in our customers in  order that they receive the best possible attention and 
+              support they deserve
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End About Splash -->
+  </body>
 </html>    

@@ -1,6 +1,24 @@
-body, html {
+.poppins, .btn, .navbar, .hero, .about .about-title-container .about-title, .about .splash-text {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+}
+
+.poppins strong, .btn strong, .navbar strong, .hero strong, .about .about-title-container .about-title strong, .about .splash-text strong {
+  font-weight: 500;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+body, html {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 1.125rem;
 }
 
 .btn {
@@ -24,34 +42,32 @@ header {
   position: relative;
   z-index: 3;
   padding-top: 30px;
-  height: 150px;
+  height: 120px;
   background: black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.9) 100%);
 }
 
+header .main-logo img {
+  width: 100%;
+  max-width: 326px;
+}
+
 header .header-actions {
   text-align: right;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 header .header-actions a {
-  color: white;
-}
-
-header nav .navbar-nav .nav-item {
-  margin-right: 30px;
-}
-
-header nav .navbar-nav .nav-item a {
-  color: white;
-}
-
-header nav .navbar-nav .nav-item a:hover {
-  color: #3e95d1;
+  color: #ffffff;
+  margin-left: 15px;
+  display: inline-block;
 }
 
 header .account-cta {
+  display: inline-block;
   background-color: #ffffff;
-  padding: 15px 35px;
+  padding: 15px 30px;
   display: inline-block;
   border-radius: 30px;
   float: right;
@@ -62,11 +78,63 @@ header .account-cta a {
   color: #181818;
 }
 
+header .navbar-toggler {
+  margin-top: 0px;
+  font-size: 2rem;
+  color: #fff;
+  float: right;
+}
+
+.navbar {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-right: 30px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #3e95d1;
+}
+
+.navbar .close-nav {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1010;
+}
+
+.navbar .dropdown-menu {
+  background: #000000;
+}
+
+.navbar .dropdown-menu a {
+  color: #ffffff;
+}
+
+.navbar .dropdown-menu a:hover {
+  background-color: #3e95d1;
+}
+
 .hero {
   margin-top: -150px;
   width: 100%;
   height: 100%;
   max-height: 830px;
+  position: relative;
+}
+
+.hero .hero-player {
+  background: #000;
+  height: 700px;
+  width: 100%;
   position: relative;
 }
 
@@ -86,17 +154,17 @@ header .account-cta a {
   position: absolute;
   z-index: 2;
   top: 150px;
-  padding: 70px 0px 0px 0px;
+  padding: 70px 15px 0px 15px;
   width: 100%;
   text-align: center;
   font-weight: 700;
-  font-size: 5.525rem;
   line-height: 5rem;
 }
 
 .hero .slide-item .slide-title {
   color: #ffffff;
   margin-bottom: 15px;
+  font-size: 5.525rem;
 }
 
 .hero .slide-item .slide-blurb {
@@ -105,4 +173,122 @@ header .account-cta a {
   line-height: 2.2rem;
   font-weight: 400;
   margin-bottom: 30px;
+}
+
+.service-intro {
+  background: #FBFBFB;
+  border-top: 20px solid #707070;
+}
+
+.service-intro .container {
+  position: relative;
+  background-color: #ffffff;
+  margin: 0px;
+  margin-top: -50px;
+  z-index: 3;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.service-intro .container .service-item {
+  padding: 30px 15px;
+}
+
+.service-intro .container .service-icon {
+  float: left;
+  width: 100%;
+  max-width: 60px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.about {
+  padding-top: 100px;
+  min-height: 800px;
+  background-image: url("../images/city-bg-lg.png");
+  background-repeat: no-repeat;
+  background-color: #FBFBFB;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.about .about-title-container {
+  margin-bottom: -140px;
+}
+
+.about .about-title-container .about-dashed {
+  margin-top: -100px;
+  width: 1px;
+  border: 1px dashed #707070;
+  height: 200px;
+  display: block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.about .about-title-container .about-title {
+  border: 10px solid #707070;
+  font-size: 2.5rem;
+  background: #ffffff;
+  padding: 10px 20px;
+  display: inline-block;
+  transform: rotate(-90deg);
+  margin-bottom: -140px;
+}
+
+.about .splash-text {
+  font-size: 2.60rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+  }
+  .hero .slide-item .slide-title {
+    font-size: 2.3rem;
+    line-height: 2.2rem;
+  }
+  .hero .slide-item .slide-blurb {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .service-intro {
+    background-color: #ffffff;
+    margin-top: -50px;
+    z-index: 3;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  }
+  .service-intro .service-item {
+    padding: 15px;
+    text-align: center;
+  }
+  .service-intro .service-icon {
+    float: none;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }

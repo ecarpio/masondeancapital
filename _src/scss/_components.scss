@@ -4,6 +4,7 @@
 	padding:15px 30px;
 	font-size:.9rem;
 	min-width: 180px;
+	@extend .poppins;
 
 	&.btn-primary {
 		background-color:$main-blue;
@@ -13,4 +14,21 @@
 		background-color:$white;
 		color:$black;
 	}
+}
+
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative) {
+  position: $position;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
