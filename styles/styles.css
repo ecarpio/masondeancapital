@@ -291,6 +291,9 @@ header .navbar-toggler {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+  .about {
+    background-size: contain;
+  }
   .about .about-title-container {
     margin-bottom: 0px;
   }
@@ -302,5 +305,9 @@ header .navbar-toggler {
     margin-bottom: 30px;
     transform: rotate(0deg);
     position: relative;
+  }
+  .about .splash-text {
+    text-align: center;
+    margin-bottom: 30px;
   }
 }

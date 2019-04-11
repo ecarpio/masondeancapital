@@ -53,6 +53,9 @@
 
 	// About
 	.about {
+
+		background-size: contain;
+
 		.about-title-container { 
 
 			margin-bottom:0px;
@@ -68,6 +71,11 @@
 				position: relative;
 			}
 		}
+
+		.splash-text {
+			text-align:center;
+			margin-bottom:30px;
+		}	
 		
 	}
 }
