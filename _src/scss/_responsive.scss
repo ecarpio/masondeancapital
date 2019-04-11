@@ -1,7 +1,8 @@
-// Navigation
+
 
 @media (max-width: 991px)  {
 
+	// Navigation
     .navbar-collapse {
         background:rgba(0,0,0,0.9);
         position:fixed;
@@ -11,10 +12,10 @@
         right:0px;
         text-align: center;
         padding:20px;
-        z-index: 1000;
+        z-index: 2000;
     }
     
-
+    // Hero
     .hero {
     	.slide-item {
     		.slide-title {
@@ -31,6 +32,7 @@
     	
     }
 
+    // Service
     .service-intro {
 	    background-color:$white;
 	    margin-top:-50px;
@@ -47,5 +49,25 @@
 	            margin-bottom:30px;
 	            @include vertical-align();
 	        }
+	}
+
+	// About
+	.about {
+		.about-title-container { 
+
+			margin-bottom:0px;
+
+			.about-dashed {
+				height:30px;
+			}
+
+			.about-title {
+				margin-top:0px;
+				margin-bottom:30px;
+				transform: rotate(0deg);
+				position: relative;
+			}
+		}
+		
 	}
 }
