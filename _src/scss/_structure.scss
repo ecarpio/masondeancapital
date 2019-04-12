@@ -217,10 +217,12 @@ header {
         }
 }
 
+
+// Services
 .services {
-    h3 {
+    h2 {
         text-align: center;
-        margin-bottom:30px;
+        margin-bottom:100px;
 
             span {
                 color:$main-blue;
@@ -230,6 +232,63 @@ header {
     .service-grid {
         .service-item {
             text-align: center;
+            margin-bottom:50px;
+                .service-icon {
+                    margin-bottom:20px;
+                }
         }
     }
+}
+
+// Testimonials
+.testimonials {
+    margin-top:100px;
+    background-color:$main-blue;
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align: center;
+    color:$white;
+
+        h3 {
+            font-weight: 400;
+        }
+}
+
+
+// Footer
+
+footer {
+    background-color:$black;
+    min-height:100px;
+    padding:100px 0px;
+    color:$white;
+
+        .side-column {
+            padding-top:10px;
+            margin-bottom:80px;
+                h4 {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    margin-bottom:50px;
+                }
+        }
+
+        .main-logo {
+            margin-bottom:80px;
+        }
+
+        .social-icons {
+            margin-top:80px;
+            margin-bottom:80px;
+
+            a {
+                color:$white;
+                display: inline-block;
+                margin:0px 10px;
+            }
+        }
+
+        .copyright {
+            font-size:.7rem;
+        }
 }
