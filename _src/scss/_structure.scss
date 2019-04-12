@@ -1,7 +1,7 @@
 // Header
 header {
     position: relative;
-    z-index: 3;
+    z-index: 4;
     padding-top:30px;
     height:120px;
     background: rgb(0,0,0);
@@ -62,6 +62,11 @@ header {
                         color:$main-blue;
                     }
             }
+
+            .dd-control {
+                color:$white;
+                font-size: .8rem;
+            }
         }
     }
 
@@ -73,6 +78,11 @@ header {
         top:0px;
         right:0px;
         z-index: 1010;
+        background:none;
+        border:none;
+        padding:20px;
+        color:$white;
+        font-size: 2rem;
     }
 
     .dropdown-menu {
