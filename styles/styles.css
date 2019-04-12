@@ -457,6 +457,10 @@ footer .copyright {
   margin-bottom: 30px;
 }
 
+.page-content .quick-nav {
+  margin-bottom: 30px;
+}
+
 .page-content .left-sidenav {
   min-height: 200px;
   background-color: #3e95d1;
