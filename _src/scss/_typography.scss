@@ -16,9 +16,8 @@
 body, html {
 	font-family: 'Lato', sans-serif;
 	font-size:16px;
+	color:$charcoal;
 }
-
-
 
 
 h2 {
@@ -41,6 +40,37 @@ h4 {
 h6 {
 	font-size:1rem;
 }
+
+
+q {
+	font-size:1.8rem;
+	font-style: italic;
+	color:$main-blue;
+	background:$light-gray;
+	padding:20px;
+	margin:15px 0px;
+	display: block;
+	@extend .poppins;
+
+		&:before {
+			font-family: 'Font Awesome 5 Pro';
+			content: '\f10d';
+			font-size:2rem;
+			font-weight: 900;
+		}
+
+		&:after {
+			font-family: 'Font Awesome 5 Pro';
+			content: '\f10e';
+			font-size:2rem;
+			font-weight: 900;
+		}
+}
+
+
+a {
+	color:$main-blue;
+}	
 
 footer {
 	a {

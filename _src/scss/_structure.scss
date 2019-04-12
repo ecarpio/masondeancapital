@@ -99,7 +99,6 @@ header {
 }
 
 
-
 // Hero Banner
 .hero {
     margin-top:-150px;
@@ -155,9 +154,7 @@ header {
 
 }
 
-// Serivde Intro
-
-
+// Serivce Intro
 .service-intro {
     background: $light-gray;
     border-top:20px solid $dark-gray;
@@ -184,6 +181,7 @@ header {
             }
     }
 }
+
 // About Splash
 .about {
     padding-top:100px;
@@ -227,7 +225,6 @@ header {
         }
 }
 
-
 // Services
 .services {
     h2 {
@@ -266,7 +263,6 @@ header {
 
 
 // Footer
-
 footer {
     background-color:$black;
     min-height:100px;
@@ -303,4 +299,68 @@ footer {
         .copyright {
             font-size:.7rem;
         }
+}
+
+
+
+// Subpages
+.subpage-hero {
+    background-color:$black;
+    margin-top:-120px;
+    padding-top:150px;
+    width:100%;
+    height:300px;
+    position: relative;
+    @extend .poppins;
+    color:$white;
+
+        h1 {
+            padding-top:30px;
+            border-top:1px solid #666;
+            margin-bottom:0px;
+            font-weight:300;
+            color:$medium-gray;
+        }
+
+        h5 {
+            font-weight:300;
+            @extend .lato;
+        }
+}
+
+.page-content {
+    padding-top:50px;
+
+    h2 {
+        font-size:2rem;
+        font-weight:300;
+        margin-bottom:0px;
+    }
+
+    img {
+        margin-bottom:30px;
+    }
+
+    .left-sidenav {
+        min-height:200px;
+        background-color:$main-blue;
+        padding:15px 20px;
+        color:$white;
+
+            ul {
+                padding:0px;
+                margin:0px;
+
+                li {
+                    list-style-type:none;
+                    margin:0px 0px 10px 0px;
+                    padding:0px 0px 10px 0px; 
+                    border-bottom:1px solid rgba(255,255,255,0.4);
+
+                        a {
+                            color:$white;
+                        }
+                }
+            }
+    }
 }
