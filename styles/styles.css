@@ -368,6 +368,8 @@ footer .side-column h4 {
 
 footer .main-logo {
   margin-bottom: 80px;
+  width: 100%;
+  max-width: 325px;
 }
 
 footer .social-icons {
