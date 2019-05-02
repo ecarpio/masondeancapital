@@ -236,7 +236,7 @@ header .navbar-toggler {
 }
 
 .hero:before {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   background-size: cover;
   position: absolute;
   z-index: 1;
@@ -261,13 +261,13 @@ header .navbar-toggler {
 .hero .slide-item .slide-title {
   color: #ffffff;
   margin-bottom: 15px;
-  font-size: 5.525rem;
+  font-size: 4.525rem;
 }
 
 .hero .slide-item .slide-blurb {
   color: #ffffff;
-  font-size: 2rem;
-  line-height: 2.2rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -383,32 +383,42 @@ header .navbar-toggler {
 }
 
 footer {
-  background-color: #000000;
-  min-height: 100px;
-  padding: 100px 0px;
+  background-color: #333333;
+  padding: 30px 0px;
   color: #ffffff;
 }
 
 footer .side-column {
   padding-top: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 footer .side-column h4 {
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  margin: 0px;
+  margin-top: 15px;
+  padding: 0px;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0px 8px;
+  list-style-type: none;
 }
 
 footer .main-logo {
-  margin-bottom: 80px;
   width: 100%;
   max-width: 325px;
 }
 
 footer .social-icons {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 footer .social-icons a {
@@ -419,6 +429,10 @@ footer .social-icons a {
 
 footer .copyright {
   font-size: .7rem;
+}
+
+footer p {
+  margin-bottom: 10px;
 }
 
 .subpage-hero {

@@ -116,7 +116,7 @@ header {
         }
 
         &:before {
-            background:rgba(0,0,0,0.8);
+            background:rgba(0,0,0,0.5);
             background-size:cover;
             position: absolute;
             z-index: 1;
@@ -140,13 +140,13 @@ header {
                 .slide-title {
                     color:$white;
                     margin-bottom:15px;
-                    font-size:5.525rem;
+                    font-size:4.525rem;
                 }
                 
                 .slide-blurb {
                     color:$white;
-                    font-size:2rem;
-                    line-height: 2.2rem;
+                    font-size:1.8rem;
+                    line-height: 2rem;
                     font-weight:400;
                     margin-bottom:30px;
                 }
@@ -264,31 +264,39 @@ header {
 
 // Footer
 footer {
-    background-color:$black;
-    min-height:100px;
-    padding:100px 0px;
+    background-color:$charcoal;
+    padding:30px 0px;
     color:$white;
 
         .side-column {
             padding-top:10px;
-            margin-bottom:80px;
+            margin-bottom:20px;
                 h4 {
                     text-transform: uppercase;
                     font-weight: 500;
-                    margin-bottom:50px;
+                    margin-bottom:20px;
+                }
+        }
+
+        ul {
+            margin:0px;
+            margin-top:15px;
+            padding:0px;
+                li {
+                    display: inline-block;
+                    padding:0px 8px;
+                    list-style-type: none;
                 }
         }
 
         .main-logo {
-            margin-bottom:80px;
             width:100%;
             max-width:325px;
         }
 
         .social-icons {
-            margin-top:80px;
-            margin-bottom:80px;
-
+            margin-top:30px;
+            margin-bottom:40px;
             a {
                 color:$white;
                 display: inline-block;
@@ -299,6 +307,11 @@ footer {
         .copyright {
             font-size:.7rem;
         }
+
+        p {
+            margin-bottom:10px;
+        }
+
 }
 
 
