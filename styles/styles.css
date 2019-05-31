@@ -478,7 +478,7 @@ footer p {
 .page-content .left-sidenav {
   min-height: 200px;
   background-color: #3e95d1;
-  padding: 15px 20px;
+  padding: 15px 20px 0px 20px;
   color: #ffffff;
 }
 
@@ -494,8 +494,21 @@ footer p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+.page-content .left-sidenav ul li:last-child {
+  border-bottom: 0px;
+}
+
 .page-content .left-sidenav ul li a {
   color: #ffffff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+#spreads {
+  padding: 20px;
+  background-color: #FBFBFB;
 }
 
 @media (max-width: 991px) {
