@@ -60,6 +60,16 @@ q:after {
   font-weight: 900;
 }
 
+p.author {
+  font-size: 1.25rem;
+}
+
+p.author span {
+  top: -10px;
+  position: relative;
+  font-size: 1rem;
+}
+
 a {
   color: #3e95d1;
 }
