@@ -125,6 +125,28 @@ footer a {
   font-size: 1rem;
 }
 
+.arrow-list {
+  margin: 0px;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #FBFBFB;
+}
+
+.arrow-list li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.arrow-list li:before {
+  font-family: 'Font Awesome 5 Pro';
+  content: '\f054';
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-right: 10px;
+  color: #3e95d1;
+}
+
 header {
   position: relative;
   z-index: 4;

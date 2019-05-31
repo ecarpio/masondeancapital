@@ -63,6 +63,28 @@
 }
 
 
+// Arrow List
+.arrow-list {
+	margin:0px;
+	margin-top:15px;
+	padding:20px;
+	background-color:$light-gray;
+
+		li {
+			list-style-type: none;
+			margin-bottom:10px;
+			font-size:1.2rem;
+			&:before {
+				font-family: 'Font Awesome 5 Pro';
+				content:'\f054';
+				font-size:1.2rem;
+				font-weight: 900;
+				margin-right:10px;
+				color:$main-blue;
+			}
+		}
+}
+
 // Alignments
 @mixin vertical-align($position: relative) {
   position: $position;
