@@ -159,6 +159,40 @@ footer a {
   color: #3e95d1;
 }
 
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset label {
+  display: block;
+}
+
+fieldset label.required:after {
+  content: '*';
+  color: #cc0000;
+  margin-left: 5px;
+}
+
+fieldset label.required.requiredError {
+  color: #cc0000;
+}
+
+fieldset input[type=text], fieldset input[type=email] {
+  padding: 5px 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+fieldset input.requiredError {
+  border: 1px solid #cc0000;
+}
+
+fieldset select {
+  padding: 8px 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
 header {
   position: relative;
   z-index: 4;
@@ -510,9 +544,8 @@ footer p {
 }
 
 .page-content .left-sidenav {
-  min-height: 200px;
   background-color: #3e95d1;
-  padding: 15px 20px 0px 20px;
+  padding: 15px 20px 5px 20px;
   color: #ffffff;
 }
 

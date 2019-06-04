@@ -87,6 +87,49 @@
 		}
 }
 
+
+// Forms
+
+fieldset {
+
+	margin-bottom:20px;	
+
+	label {
+		display:block;
+
+			&.required {
+				&:after {
+					content:'*';
+					color:$red;
+					margin-left:5px;
+				}
+
+				&.requiredError {
+					color:$red;
+				}
+			}
+	}
+
+	input{
+		&[type=text], &[type=email] {
+			padding:5px 10px;
+			font-size:1rem;
+			width:100%;
+		}
+
+		&.requiredError {
+			border:1px solid $red;
+		}
+	}
+
+	select {
+		padding:8px 10px;
+		font-size:1rem;
+		width:100%;
+	}
+}
+
+
 // Alignments
 @mixin vertical-align($position: relative) {
   position: $position;
