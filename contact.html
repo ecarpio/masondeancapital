@@ -108,8 +108,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1>New Account</h1>
-            <h5>Start investing today</h5>        
+            <h1>Contact Us</h1>
+            <h5>How can we help?</h5>        
           </div>
         </div>
       </div>
@@ -140,9 +140,9 @@
             </div>
           </div>
           <div class="col-md-6 col-12">
-            <div class="breadcrumbs"><a href="#">Mason Dean Capital</a> // Support // New Account</div>
+            <div class="breadcrumbs"><a href="#">Mason Dean Capital</a> // Support // Contact</div>
 
-            <h2>Fill Out the Application Below</h2>
+            <h2>Fill Out the Contact Form Below</h2>
             <h5>All Fields are Required</h5>
             <hr />
             
@@ -163,24 +163,17 @@
               </fieldset>
 
               <fieldset>
-                <label>Account Type</label>
-                <select id="acctType" required>
-                  <option value="individual">Individual</option>
-                  <option value="corporation">Corporation</option>
-                </select>
+                <label class="required">Subject</label>
+                <input type="text" name="subject" required />
               </fieldset>
 
               <fieldset>
-                <label>Country</label>
-                <select id="country" required>
-                  <option value="usa">USA</option>
-                  <option value="non-usa">Outside USA</option>
-                </select>
+                <label class="required">Message</label>
+                <textarea></textarea>
               </fieldset>
-
               <hr />
 
-              <button class="btn btn-primary" id="submitApp" disabled>Continue</button>
+              <button class="btn btn-primary" id="submit">Submit</button>
 
            
             
