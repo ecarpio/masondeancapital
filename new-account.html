@@ -14,6 +14,9 @@
   </head>
   <body class="subpage">
     <!-- Start Header -->
+
+ {{> header}}
+    
     <header>
       <div class="container">
         <div class="row">
@@ -144,26 +147,34 @@
           <div class="col-md-6 col-12">
             <div class="breadcrumbs"><a href="#">Mason Dean Capital</a> // Support // New Account</div>
 
-            <h2>Fill Out the Application Below</h2>
-            <h5>All Fields are Required</h5>
-            <hr />
-            
-              
+            <!-- Start Account  Selection -->
+            <div class="account-selection">
+              <h2>Please Choose an Account Type</h2>
+
+              <div class="btn-group" id="accountSelect" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary active" id="forex">Forex</button>
+                <button type="button" class="btn btn-primary" id="futures">Managed Futures</button>
+              </div>
+
+            </div>
+
+
+            <div class="formFields forexAccount" id="forexForm">
+              <h2>Fill Out The Application Below</h2>
+              <h5>All Fields are Required</h5>
+              <hr />
               <fieldset>
                 <label class="required">Full Name</label>
                 <input type="text" name="name" required />
               </fieldset>
-
               <fieldset>
                 <label class="required">Email Address</label>
                 <input type="email" name="email" required />
               </fieldset>
-
               <fieldset>
                 <label class="required">Phone Number</label>
                 <input type="text" name="phone" required />
               </fieldset>
-
               <fieldset>
                 <label>Account Type</label>
                 <select id="acctType" required>
@@ -171,7 +182,6 @@
                   <option value="corporation">Corporation</option>
                 </select>
               </fieldset>
-
               <fieldset>
                 <label>Country</label>
                 <select id="country" required>
@@ -179,13 +189,38 @@
                   <option value="non-usa">Outside USA</option>
                 </select>
               </fieldset>
-
               <hr />
+              <button class="btn btn-primary submitApp" id="submitAppForex" disabled>Continue</button>
+            </div>
 
-              <button class="btn btn-primary" id="submitApp" disabled>Continue</button>
-
-           
             
+            <div class="formFields futuresAccount">
+              <h2>Fill Out the Account Application Below</h2>
+              <h5>All Fields are Required</h5>
+              <fieldset>
+                  <label class="required">Full Name</label>
+                  <input type="text" name="name" required />
+                </fieldset>
+
+                <fieldset>
+                  <label class="required">Email Address</label>
+                  <input type="email" name="email" required />
+                </fieldset>
+
+                <fieldset>
+                  <label class="required">Confirm Address</label>
+                  <input type="email" name="cnfirmADdress" required />
+                </fieldset>
+
+                <fieldset>
+                  <label class="required">Phone Number</label>
+                  <input type="text" name="phone" required />
+                </fieldset>
+
+                <button class="btn btn-primary submitApp" id="submitAppFutures" disabled>Continue</button>
+
+            </div>
+
 
           </div>
         </div>

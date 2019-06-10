@@ -246,6 +246,20 @@ header {
     }
 }
 
+.account-selection {
+    margin-bottom:40px;
+    border-bottom:1px solid $medium-gray;
+    padding-bottom:20px;
+        h2 {
+            margin-bottom:20px !important;
+        }
+}
+
+
+.futuresAccount {
+    display: none;
+}
+
 // Testimonials
 .testimonials {
     margin-top:100px;
