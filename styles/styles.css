@@ -444,6 +444,20 @@ header .navbar-toggler {
   margin-bottom: 20px;
 }
 
+.account-selection {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #b1b1b1;
+  padding-bottom: 20px;
+}
+
+.account-selection h2 {
+  margin-bottom: 20px !important;
+}
+
+.futuresAccount {
+  display: none;
+}
+
 .testimonials {
   margin-top: 100px;
   background-color: #3e95d1;

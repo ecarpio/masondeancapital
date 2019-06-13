@@ -10,18 +10,20 @@ $(function(){
 
   var requiredInput = $('input:required');
 
-  requiredInput.on('keyup', function(){
-    var isValid = true;
-    requiredInput.filter('[required]:visible').each(function() {
-      if ( $(this).val() === '' )
-      isValid = false;
-    });
-    
-    if(isValid == true) {
-      $('#submitApp').prop('disabled', false);
-    } else {
-      $('#submitApp').prop('disabled', true);
-    }
+  $('.formFields').each(function(){
+    requiredInput.on('keyup', function(){
+      var isValid = true;
+      requiredInput.filter('[required]:visible').each(function() {
+        if ( $(this).val() === '' )
+        isValid = false;
+      });
+      
+      if(isValid == true) {
+        $('.submitApp').prop('disabled', false);
+      } else {
+        $('submitApp').prop('disabled', true);
+      }
+    })
   })
 
   requiredInput.on('blur', function(){
@@ -42,8 +44,7 @@ $(function(){
   });
 
   // Form Redirect
-  $('#submitApp').on('click', function(){
-
+  $('#submitAppForex').on('click', function(){
     $('input').each(function(){
         if( $(this).val() == "" ){
           $(this).addClass('requiredError');
@@ -58,15 +59,25 @@ $(function(){
         }
 
         // Function to Collect Data
-
     });
-
-
-
-
-
-		
 	});
 
 
+  // Select Account
+  $('#accountSelect button').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    
+    $('.formFields input').val('')
+    $('.submitApp').prop('disabled', true);
+    // Show Form
+    if($('#forex').hasClass('active')) {
+      $('.forexAccount').show()
+      $('.futuresAccount').hide()
+    } else {
+      $('.forexAccount').hide()
+      $('.futuresAccount').show()
+    }
+
+
+  })
 })
