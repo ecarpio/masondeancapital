@@ -24,6 +24,23 @@ $(function(){
     }
   })
 
+  requiredInput.on('blur', function(){
+    var isFilled = true;
+    requiredInput.filter('[required]:visible').each(function() {
+      if ( $(this).val() === '' )
+      isFilled = false;
+
+      console.log($(this))
+
+      if(isFilled == false) {
+        $(this).addClass('error');
+      } else {
+        $(this).removeClass('error')
+      }
+
+    });
+  });
+
   // Form Redirect
   $('#submitApp').on('click', function(){
 
