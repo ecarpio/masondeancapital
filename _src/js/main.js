@@ -11,6 +11,7 @@ $(function(){
   var requiredInput = $('input:required');
 
   $('.formFields').each(function(){
+
     requiredInput.on('keyup', function(){
       var isValid = true;
       requiredInput.filter('[required]:visible').each(function() {
@@ -26,22 +27,13 @@ $(function(){
     })
   })
 
-  requiredInput.on('blur', function(){
-    var isFilled = true;
-    requiredInput.filter('[required]:visible').each(function() {
-      if ( $(this).val() === '' )
-      isFilled = false;
-
-      console.log($(this))
-
-      if(isFilled == false) {
-        $(this).addClass('error');
-      } else {
-        $(this).removeClass('error')
+  requiredInput.each(function(){
+    $(this).on('blur', function(){
+      if($(this).val() === '' ){
+        $(this).addClass('requiredError')
       }
-
-    });
-  });
+    })
+  })
 
   // Form Redirect
   $('#submitAppForex').on('click', function(){
@@ -67,8 +59,11 @@ $(function(){
   $('#accountSelect button').on('click', function(){
     $(this).addClass('active').siblings().removeClass('active');
     
-    $('.formFields input').val('')
+    $('.formFields input').val('').removeClass('requiredError');
     $('.submitApp').prop('disabled', true);
+
+
+
     // Show Form
     if($('#forex').hasClass('active')) {
       $('.forexAccount').show()
