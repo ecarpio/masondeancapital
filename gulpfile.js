@@ -47,7 +47,7 @@ gulp.task('compress', function() {
 				config.node + '/jquery/dist/jquery.min.js',
 				config.node + '/popper.js/dist/umd/popper.min.js',
                 config.node + '/bootstrap/dist/js/bootstrap.min.js',
-                config.node + '/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js',
+                config.node + '/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js',
 				config.source + '/js/vendors/jquery-mobile.min.js',
 				config.source + '/js/vendors/modernizr.custom.17475.js',
 				//config.source + '/js/main.js',

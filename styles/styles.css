@@ -308,6 +308,11 @@ header .navbar-toggler {
   height: 700px;
   width: 100%;
   position: relative;
+  -webkit-transition: background 300ms ease-in 200ms;
+  /* property duration timing-function delay */
+  -moz-transition: background 300ms ease-in 200ms;
+  -o-transition: background 300ms ease-in 200ms;
+  transition: background 300ms ease-in 200ms;
 }
 
 .hero:before {

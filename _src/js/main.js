@@ -2,8 +2,10 @@ $(function(){
 
   // Homepage Splash Background
   var options = {
-      mobileFallbackImage: "http://www.hdwallpapers.in/walls/pink_cosmos_flowers-wide.jpg",
-      playOnlyIfVisible  : false
+      mobileFallbackImage: "/images/home-bg.png",
+      playOnlyIfVisible  : false,
+      //coverImage: "/images/home-bg.png",
+      fadeOnStartTime: 100,
   };
 
   myPlayer = $(".player").YTPlayer(options);
